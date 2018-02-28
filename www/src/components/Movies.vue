@@ -5,7 +5,7 @@
             <li v-for="movie in myMovies">
                 {{movie.title}}
                 <p @click="showDetails(movie)">{{movie.title}}</p>
-                <i class="fas fa-minus"></i>
+                
             </li>
         </ol>
     </div>

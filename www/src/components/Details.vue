@@ -7,6 +7,7 @@
             {{movie.title}}
         </h3>
         <div v-if="movie.poster_path">
+            <button type="info">Add to List</button> <br>
             <img :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="movie poster">
         </div>
     </div>

@@ -5,8 +5,8 @@ var SchemaName = "Movie";
 
 
 var schema = new Schema({
-    title: { type: Object, required: true },
-    release_date: { type: Date, required: true, default: Date.now() },
+    title: { type: String, required: true },
+    release_date: { type: Date, required: true},
     img: {type: String, required: true},
     rating: {type: Number, required: true}
     // postId: {type: ObjectId, ref: "Post", required: true}

@@ -4,12 +4,13 @@
             Results for {{title}}:
         </h4>
         <div class="row">
-            <ol class="col-sm-6">
-                <li v-for="movie in movies">
-                    <p @click="showDetails(movie)">{{movie.title}}</p>
-                    <i class="fas fa-plus"></i>
-                </li>
-            </ol>
+            <div class="col-sm-6">
+                <ol>
+                    <li v-for="movie in movies">
+                        <p @click="showDetails(movie)">{{movie.title}}</p>
+                    </li>
+                </ol>
+            </div>
             <detailz class="col-sm-6" :movie="activeMovie" :title="title"></detailz>
         </div>
     </div>
@@ -39,7 +40,7 @@
             }
         },
         components: {
-        detailz: Details
+            detailz: Details
         },
         props: ['title']
     }
